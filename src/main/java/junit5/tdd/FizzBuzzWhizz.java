@@ -2,15 +2,19 @@ package junit5.tdd;
 
 public class FizzBuzzWhizz {
     public String playFizzBuzzWhizz(int number) {
+        String result = "";
         if(number % 3 == 0){
-            return "fizz";
+            result += "fizz";
         }
         if(number % 5 == 0){
-            return "buzz";
+            result += "buzz";
         }
         if(number % 7 == 0){
-            return "whizz";
+            result += "whizz";
         }
-        return String.valueOf(number);
+        if ("".equals(result)){
+            result = String.valueOf(number);
+        }
+        return result;
     }
 }
