@@ -26,4 +26,15 @@ public class FizzBuzzWhizzTest {
         // then
         assertEquals("fizz", result);
     }
+
+    @Test
+    void should_return_buzz_when_play_fizz_buzz_whizz_given_5() {
+        // given
+        int number = 5;
+        FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
+        // when
+        String result = fizzBuzzWhizz.playFizzBuzzWhizz(number);
+        // then
+        assertEquals("buzz", result);
+    }
 }
