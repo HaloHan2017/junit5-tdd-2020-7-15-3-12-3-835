@@ -8,10 +8,10 @@ public class FizzBuzzWhizzTest {
     @Test
     void should_return_1_when_play_fizz_buzz_whizz_given_1() {
         // given
-        int num = 1;
+        int number = 1;
         FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
         // when
-        String result = fizzBuzzWhizz.playFizzBuzzWhizz();
+        String result = fizzBuzzWhizz.playFizzBuzzWhizz(number);
         // then
         assertEquals("1", result);
     }
